@@ -218,8 +218,7 @@ def dobro(n):
     else:
         return (n * 2)
 
-    
-    
+#Este codigo esta incompleto
 
 numero = int(input('Insira um numero para saber seu dobro: '))
 dobro(numero)
