@@ -49,7 +49,7 @@ print(Funcionarios.idade_funcionarios(usuario1))
 print(Funcionarios.nome_completo(usuario3))
 print(usuario2.nome)
 print(usuario3.nome)
-'''
+
 
 #Exercicio 
 #criem uma class chamada Automoveis com parametros = marca,ano
@@ -64,9 +64,62 @@ class Automoveis:
         return self.marca +' de '+ self.ano
 
 locadora1 = Automoveis('Gol','2009')
-locadora2 = Automoveis('Fiat','2007')
+locadora2 = Automoveis('Renault','2007')
 locadora3 = Automoveis('Fiat Uno','2004')
 
 print(Automoveis.ano_marca(locadora1))
 print(Automoveis.ano_marca(locadora2))
 print(Automoveis.ano_marca(locadora3))
+
+#Criar Classe
+class Computador:
+    def __init__(self,marca,memoria_ram, placa_de_video):
+        self.marca = marca
+        self.memoria_ram = memoria_ram
+        self.placa_de_video = placa_de_video
+    def ExibirInformacoes(self):
+        print(self.marca,self.memoria_ram,self.placa_de_video)
+    #Método
+    def Desligar(self):
+        print('Estou Desligando')
+
+#Criar Objeto da Classe
+computador1 = Computador('Asus', '16gb','Samsung')
+#Exibindo os atributos do objeto
+computador1.ExibirInformacoes()
+#Usando metodos do objeto
+computador1.Desligar()
+'''
+
+#Class / Construtores
+
+'''
+Velocidade Máxima, Cor, Ligado
+'''
+
+class Carro:
+    def __init__(self,velMax,cor,ligado):
+        self.velMax = velMax
+        self.cor = cor
+        self.ligado = ligado
+    def Mostrar(self):
+        print('Velocidade Máxima: ' + str(self.velMax))
+        print('Cor..............: ' + self.cor)
+        estado = 'Sim' if self.ligado else 'Não'
+        print('Ligado...........: ' + estado)
+        print('.................................')
+    def ligar(self):
+        self.ligado = True
+
+c1 = Carro (200,'Preto',False)
+c2 = Carro (120,'Azul',False)
+c3 = Carro (300,'Vermelho',False)
+
+c1.ligar()
+c1.Mostrar()
+c2.ligar()
+c2.Mostrar()
+c3.ligar()
+c3.Mostrar()
+
+print(Carro.ligar(c1))
