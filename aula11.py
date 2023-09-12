@@ -121,5 +121,3 @@ c2.ligar()
 c2.Mostrar()
 c3.ligar()
 c3.Mostrar()
-
-print(Carro.ligar(c1))

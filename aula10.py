@@ -61,7 +61,7 @@ print(type(cores_tuples))
 
 duas_listas = cores_list * 2 
 print(duas_listas)
-'''
+
 
 #Criar uma lista de frutas a partir do input fornecido por vírgulas:
 
@@ -73,3 +73,7 @@ frutas_usuario = input('Digite o nome da fruta separados por virgula: ')
 frutas_lista = frutas_usuario.split(',')
 
 print(frutas_lista)
+'''
+
+#Class / Construtores
+
